@@ -1,0 +1,29 @@
+<form method="POST" action="application/obat/updateObat.php">
+    <div class='modal hide fade' id='updateObatModal'>
+        <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal'>X</button>
+            <h3>Ubah Data Obat</h3>
+        </div>
+        <div class='modal-body'>
+            <p>
+            <table class="table" style="border:0px solid #fff;">
+                <tr>
+                    <td class="required">Nama</td>
+                    <td>
+                        <input type="hidden" name="id" id="idUpdateObat">
+                        <input type="text" name="namaobat" required placeholder="Ketik Nama Obat" id="namaobatUpdateObat">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Deskripsi</td>
+                    <td><textarea name="deskripsiobat" style="height:220px;" placeholder="Ketik Deskripsi Obat" id="deskripsiobatUpdateObat"></textarea></td>
+                </tr>
+            </table>
+            </p>
+        </div>
+        <div class='modal-footer'>
+            <a href='#' class='btn' data-dismiss='modal'>Tutup</a>
+            <button class='btn btn-primary' type="submit">Simpan</button>
+        </div>
+    </div>
+</form>
